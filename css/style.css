@@ -112,6 +112,8 @@ body {
 }
 
 .header-search  :-ms-input-placeholder      { color:#fff; }
+
+.header-search ::-moz-placeholder           {color:#ffffff;}
 /*
 :focus::-webkit-input-placeholder { color: transparent; }
 :focus:-ms-input-placeholder      { color: transparent; }*/
@@ -1201,6 +1203,7 @@ body {
 	/*background: url("../img/slider-active.png") no-repeat;*/
 }
 
+
 .block-perforators {
 	margin-top: 0px;
 	float:left;
@@ -1210,9 +1213,14 @@ body {
 	float:left;
 	width: 620px;
 	min-height: 265px;
-	background-image: url("../img/block-perforators-slider1.jpg");
+	/*background-image: url("../img/block-perforators-slider1.jpg");*/
 }
 
+
+.block-perforators-text {
+    position: absolute;
+    top: 0;
+}
 
 .block-perforators .block-perforators-header {
   font-size: 36px;
@@ -1233,6 +1241,8 @@ body {
 }
 
 .block-perforators a {
+	    top: 81px;
+    position: absolute;
 	text-decoration: none;
 	color: white;
 	display:inline-block;
@@ -1637,19 +1647,20 @@ body {
 
 
 .company-feature-button {
-	display: inline-block;
-	background-color: #ff5357;
-	height: 38px;
-	width: 195px;
-	color:white;
-	text-decoration: none;
-	text-transform: uppercase;
-	text-align: center;
-	box-sizing: border-box;
-	padding-top: 8px;
-	margin-top: 25px;
-	font-size: 14px;
-	font-family: "Cuprum", sans-serif;
+    display:block;
+    background-color: #ff5357;
+    height: 38px;
+    width: 195px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 8px;
+    margin-top: 24px;
+    font-size: 14px;
+    font-family: "Cuprum", sans-serif;
+    border-radius: 4px;
 }
 
 .company-service-title {
@@ -1771,7 +1782,7 @@ body {
 	display: inline-block;
 	width: 300px;
 	min-height: 175px;
-	/*display: none;*/
+	display: none;
 	position: relative;
 	z-index: 100;
 }
@@ -1816,7 +1827,7 @@ body {
 	min-height: 175px;
 	margin-top: 25px;
 	position: relative;
-	display: none;
+	/*display: none;*/
 	z-index: 100;
 }
 
@@ -1849,7 +1860,7 @@ body {
 	font-size: 12px;
 	line-height: 24px;
 	margin: 0;
-	margin-top: 85px;
+    margin-top: 81px;
 	padding: 0;
 	width: 550px;
 	display: inline-block;
@@ -1860,7 +1871,7 @@ body {
 	font-family: "Cuprum", sans-serif;
 	font-size: 30px;
 	margin:0;
-	margin-bottom: 25px;
+    margin-bottom: 28px;
 	padding: 0;
 }
 
@@ -1938,6 +1949,7 @@ body {
 	font-family: "PT Sans", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
+	width: 200px;
 }
 
 .company-contacts-button {
@@ -2056,11 +2068,40 @@ body {
 
 .popup input {
 	box-sizing: border-box;
-	padding: 10px 15px;
+	/*padding: 8px 15px 12px 15px;*/
+	padding: 6px 15px 6px 15px;
 	height: 34px;
 	width: 220px;
 	border: 2px solid #dee3e4;
+	border-radius: 4px;
 }
+
+.popup ::-moz-placeholder  {
+	font-family: "PT Sans", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color:#a9a9a9;
+}
+
+
+.popup :-ms-input-placeholder   {
+	font-family: "PT Sans", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color:#a9a9a9;
+	opacity: 1;
+}
+  
+
+.popup ::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+.popup ::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+.popup :-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+.popup :-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+.popup :focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+.popup :focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+.popup :focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+.popup :focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
 
 .popup-top .popup-textarea-section {
 	width: 460px;
@@ -2246,7 +2287,7 @@ body {
 
 .footer-nav {
 	float:right;
-	width: 550px;
+	width: 552px;
 	min-height: 90px;
 }
 
