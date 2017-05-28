@@ -1784,8 +1784,8 @@ body {
 }
 .popup input {
     box-sizing: border-box;
-    /*padding: 8px 15px 12px 15px;*/
-    
+    margin-top: 10px;
+    margin-bottom: 20px;
     padding: 6px 15px 6px 15px;
     height: 34px;
     width: 220px;
@@ -1842,6 +1842,7 @@ body {
     height: 110px;
 }
 .popup-top .popup-textarea-section textarea {
+    margin-top: 10px;
     padding: 10px 15px;
     width: 460px;
     height: 110px;
